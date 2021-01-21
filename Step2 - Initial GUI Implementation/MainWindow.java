@@ -27,40 +27,18 @@ public class MainWindow {
 	    JButton readingButton = new JButton("Reading");
 	    readingButton.setBounds(145, 100, 110, 30);
 	    frame.getContentPane().add(readingButton);
-	    readingButton.addActionListener(new ActionListener(){  
-	    	public void actionPerformed(ActionEvent e){  
-	            frame.setVisible(false);
-	            ReadingWindow readingWindow = new ReadingWindow();
-	            readingWindow.showWindow();
-	        }  
-	    }); 
-	    
-	    
+	
+	   
 	    
 	    JButton watchingButton = new JButton("Watching");
 	    watchingButton.setBounds(145, 200,110, 30);
 	    frame.getContentPane().add(watchingButton);
-	    watchingButton.addActionListener(new ActionListener(){  
-	    	public void actionPerformed(ActionEvent e){  
-	            frame.setVisible(false);
-	            WatchingWindow watchingWindow = new WatchingWindow();
-	            watchingWindow.showWindow();
-	        }  
-	    }); 
-	    
-	    
-	    
+
 	    
 	    JButton smthUnusualButton = new JButton("Something rather unusual");
 	    smthUnusualButton.setBounds(90, 300, 220, 30);
 	    frame.getContentPane().add(smthUnusualButton);
-	    smthUnusualButton.addActionListener(new ActionListener(){  
-	    	public void actionPerformed(ActionEvent e){  
-	            frame.setVisible(false);
-	            SmthUnusualWindow smthUnusualWindow = new SmthUnusualWindow();
-	            smthUnusualWindow.showWindow();
-	        }  
-	    }); 
+ 
 	    
 		frame.setVisible(true);
 		

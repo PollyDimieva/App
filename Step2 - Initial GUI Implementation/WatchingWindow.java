@@ -26,35 +26,17 @@ public class WatchingWindow {
 	    JButton moviesButton = new JButton("...a movie?");
 	    moviesButton.setBounds(145, 100, 110, 30);
 	    frame.getContentPane().add(moviesButton);
-	    moviesButton.addActionListener(new ActionListener(){  
-	    	public void actionPerformed(ActionEvent e){  
-	            frame.setVisible(false);
-	            MoviesWindow moviesWindow = new MoviesWindow();
-	            moviesWindow.showWindow();
-	        }  
-	    }); 
+	
 	       
 	    JButton seriesButton = new JButton("...series?");
 	    seriesButton.setBounds(145, 200,110, 30);
 	    frame.getContentPane().add(seriesButton);
-	    seriesButton.addActionListener(new ActionListener(){  
-	    	public void actionPerformed(ActionEvent e){  
-	            frame.setVisible(false);
-	            SeriesWindow seriesWindow = new SeriesWindow();
-	            seriesWindow.showWindow();
-	        }  
-	    }); 
+	 
 	    
 	    JButton back = new JButton("Go back");
 	    back.setBounds(10, 400, 80, 30);
 	    frame.getContentPane().add(back);
-	    back.addActionListener(new ActionListener(){  
-	    	public void actionPerformed(ActionEvent e){  
-	            frame.setVisible(false);
-	            MainWindow mainWindow = new MainWindow();
-	            mainWindow.showWindow();
-	        }  
-	    }); 
+	
 	    
 	    
 	    frame.setVisible(true);
